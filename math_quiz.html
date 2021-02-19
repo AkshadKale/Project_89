@@ -9,7 +9,7 @@
  
 <link rel="stylesheet" type="text/css" href="style.css">
 
-<script src="main.js"></script>
+<script src="math_quiz.js"></script>
 </head>
  <body  id = "math_quiz_body">
    <h4  id="player1_name"></h4><span  id="player1_score"></span>
@@ -19,25 +19,22 @@
    <div class="container">
      <center>
      <h2 style="color:blanchedalmond ;">Math Quiz Game!</h2>
+     
+      <h3 id="question_turn"></h3>
+      <h3 id="answer_turn"></h3>
+     
        <div  id ="output">
-          <h4  id="question"></h4>
-          <br>
-<br>
-<label> Answer :</label>&nbsp;&nbsp;&nbsp;&nbsp;
-<input  id= "answer_input">
+
+      </div>
 <br>
 <br>
-<buttton  id="btn_check" onclick="check()" class="btn btn-success" style="width:15%; ">Check</buttton>
-</div>
-<br>
-<br>
-<br>
+
   <h4>Number 1</h4>
-   <input placeholder="Number 1" id="number1_input" style="width:60%; border-radius: 10px;" >
+   <input placeholder="Number 1" id="number1" style="width:60%; border-radius: 10px;" >
    <br>
    <br>
    <h4>Number 2</h4>
-   <input placeholder="Number 2" id="number2_input"  style="width:60%; border-radius: 10px;">
+   <input placeholder="Number 2" id="number2"  style="width:60%; border-radius: 10px;">
    <br>
    <br>
    <button id="btn_send" class="btn btn-primary" onclick="send()">Send</button>
